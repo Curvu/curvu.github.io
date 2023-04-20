@@ -1,0 +1,27 @@
+.Main {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  flex-grow: 1;
+}
+
+.me {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+@media print {
+  .Main {
+    box-shadow: none;
+    margin-top: -25px;
+  }
+}

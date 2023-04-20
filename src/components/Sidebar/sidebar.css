@@ -1,0 +1,73 @@
+.Sidebar {
+  padding: 10px 20px;
+}
+
+.sidebar-item h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-item a,
+.sidebar-item p {
+  padding: 5px 0;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.sidebar-item p {
+  margin: 0;
+}
+
+.sidebar-item span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 20px;
+}
+
+.gap {
+  flex-grow: 1;
+}
+
+.copy-button {
+  border: none;
+  padding: 16px;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.skill-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #0c48c9;
+  margin: 5px 0;
+}
+
+.language-item {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media print {
+  .copy-button {
+    display: none;
+  }
+}

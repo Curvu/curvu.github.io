@@ -1,0 +1,31 @@
+.Skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.skill-bar {
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-bar-item {
+  height: 12px;
+  width: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.filled {
+  background-color: #000;
+}

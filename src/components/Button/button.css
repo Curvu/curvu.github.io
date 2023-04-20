@@ -1,0 +1,18 @@
+.Button {
+  border: none;
+  padding: 15px 32px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  word-spacing: 5px;
+  color: #000;
+  cursor: pointer;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.Button:hover {
+  background-color: #ddd;
+}
