@@ -1,6 +1,8 @@
 import './container.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import React, { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Modal from 'react-bootstrap/Modal'
+import React, { useState, Button } from 'react'
 
 import shiftAward from '../../assets/ceritificates/shiftappens_rookie_award_certificate.png'
 
@@ -14,30 +16,20 @@ const Container = (props) => {
   }
 
   const [shift, setShift] = useState(false)
+  const handleShift = () => {
+    setShift(!shift)
+    document.onkeydown = (e) => !(e.ctrlKey && e.key === 'p' && !shift) // Toggle print (ctrl + p)
+  }
 
   return (
     <>
       {shift ? (
-        // <img src={shiftAward} alt='shift-award-2020-cerificate' className='shift2022' onClick={() => setShift(false)} />
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Modal show={handleShift} onHide={handleShift} size='lg' centered className='model'>
+        <Modal.Header closeButton>
+          <Modal.Title>Certificate</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className='model-img'/>
+      </Modal>
       ) : null}
       <div className='Container'>
         <div className='container-item'>
@@ -68,7 +60,7 @@ const Container = (props) => {
         <div className='container-item'>
           <h2><i className='bi bi-award' />achievements</h2>
           <ul className='achievements'>
-            <li onClick={() => {setShift(true)}}>ShiftAppens 2022 - Rookie Award</li>
+            <li onClick={handleShift}><i className='bi bi-arrow-right-short point' />ShiftAppens 2022 - Rookie Award <i className='bi bi-box-arrow-up-right link' /></li>
           </ul>
         </div>
       </div>
