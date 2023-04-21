@@ -17,11 +17,11 @@
 .me {
   border-bottom: 1px solid #ddd;
   text-align: center;
+  padding-top: 25px ;
 }
 
 @media print {
   .Main {
     box-shadow: none;
-    margin-top: -25px;
   }
 }
