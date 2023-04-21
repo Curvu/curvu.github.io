@@ -11,6 +11,7 @@
   align-items: center;
   gap: 5px;
   text-transform: uppercase;
+  padding-top: 10px;
 }
 
 .container-item p {
@@ -49,17 +50,29 @@
   margin: 5px 0;
   cursor: pointer;
   user-select: none;
+  display: flex;
+  gap: 5px;
+  justify-content: left;
+  align-items: center;
 }
 
-.shift2022 {
-  position: absolute;
+.model-img {
+  /* adapt this image to the model */
+  background-image: url('../../assets/ceritificates/shiftappens_rookie_award_certificate.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   height: 600px;
-  width: 800px;
-  cursor: pointer;
-} 
+}
+
+.point {
+  display: flex;
+  justify-content: center;
+}
 
 @media print {
-  .shift2022 {
+  .link {
     display: none;
   }
 }
