@@ -28,7 +28,7 @@
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 @media print {
