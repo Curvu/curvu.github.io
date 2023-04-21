@@ -1,0 +1,77 @@
+header {
+  background-color: #303E4C;
+  color: #fff;
+}
+
+.Sidebar {
+  background-color: #F1F1F3;
+}
+
+/* header with dark class */
+body.dark .Sidebar {
+  background-color: #3F5765;
+  color: #fff;
+}
+
+body.dark .me {
+  border-bottom: 0px;
+}
+
+/* affect his childs */
+body.dark .skill-title {
+  color: #BDD4DE;
+}
+
+body.dark .skill-bar-item {
+  background-color: #EFEFEF;
+}
+
+body.dark .filled {
+  background-color: #a93eb7;
+}
+
+body.dark .Sidebar span * {
+  color: #EFEFEF;
+}
+
+body.dark .Container {
+  background-color: #2C3E50;
+  color: #fff;
+}
+
+body.dark .Container .bachelor {
+  color: #BBC6D8;
+}
+
+body.dark .App,
+body.dark .Header {
+  background-color: #2A2139;
+}
+
+body.dark .Header .Button,
+body.dark .Header .source-tag {
+  color: #fff;
+}
+
+body.dark .Header .Button:hover,
+body.dark .Header .source-tag:hover {
+  background-color: #1E1829;
+}
+
+body.dark .Main, body.dark .Header {
+  box-shadow: 0 0 3px 0 #fff;
+}
+
+footer {
+  height: 64px;
+}
+
+@media print {
+  .Main {
+    box-shadow: none;
+  }
+
+  footer {
+    display: none;
+  }
+}
